@@ -102,7 +102,7 @@ jobs:
             -e ENABLE_PPPOE=${{ inputs.enable_pppoe }} \
             -e PPPOE_ACCOUNT=${{ inputs.pppoe_account }} \
             -e PPPOE_PASSWORD=${{ inputs.pppoe_password }} \
-          fanchmwrt/imagebuilder:x86-64-openwrt-${luci_version} /bin/bash /home/build/fanchmwrt/build.sh
+          fanchmwrt/imagebuilder:https://github.com/fanchmwrt/fanchmwrt/tree/fanchmwrt-24.10.4 /bin/bash /home/build/fanchmwrt/build.sh
           
 
       - name: Create info
