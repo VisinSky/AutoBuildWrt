@@ -94,9 +94,9 @@ jobs:
             -v "${{ github.workspace }}/bin:/home/build/fanchmwrt/bin" \
             -v "${{ github.workspace }}/files:/home/build/fanchmwrt/files" \
             -v "${{ github.workspace }}/custom:/home/build/fanchmwrt/files/etc/config" \
-            -v "${{ github.workspace }}/x86-64/imm.config:/home/build/fanchmwrt/.config" \
+            -v "${{ github.workspace }}/x86-64/fanchmwrt.config:/home/build/fanchmwrt/.config" \
             -v "${{ github.workspace }}/shell:/home/build/fanchmwrt/shell" \
-            -v "${{ github.workspace }}/x86-64/build24.sh:/home/build/fanchmwrt/build.sh" \
+            -v "${{ github.workspace }}/x86-64/fanchmwrt24.sh:/home/build/fanchmwrt/build.sh" \
             -e PROFILE=$profile \
             -e INCLUDE_DOCKER=$include_docker \
             -e ENABLE_PPPOE=${{ inputs.enable_pppoe }} \
